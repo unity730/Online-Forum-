@@ -8,33 +8,33 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="container" id="signUp"  style="display: none;">
-    <h1 class="form-title" >Register</h1>
+<div class="container" id="registerForm" style="display: none;">
+    <h1 class="form-title">Register</h1>
     <form method="post" action="register.php">
          <div class="input-group">
             <i class="fas fa-user"></i>
-            <input type="text" name="fName" id="fName" placeholder="First Name" required>
-            <label for="fname">First Name</label>
+            <input type="text" name="firstName" id="firstName" placeholder="First Name" required>
+            <label for="firstName">First Name</label>
          </div>
 
          <div class="input-group">
             <i class="fas fa-user"></i>
-            <input type="text" name="lName" id="lName" placeholder="Last Name" required>
-            <label for="lname">Last Name</label>
+            <input type="text" name="lastName" id="lastName" placeholder="Last Name" required>
+            <label for="lastName">Last Name</label>
          </div>
 
          <div class="input-group">
             <i class="fas fa-envelope"></i>
-            <input type="email" name="email" id="email" placeholder="Email" required>
-            <label for="email">Email</label>
+            <input type="email" name="userEmail" id="userEmail" placeholder="Email" required>
+            <label for="userEmail">Email</label>
          </div>
 
          <div class="input-group">
             <i class="fas fa-lock"></i>
-            <input type="password" name="password" id="password" placeholder="Password" required>
-            <label for="password">Password</label>
+            <input type="password" name="userPassword" id="userPassword" placeholder="Password" required>
+            <label for="userPassword">Password</label>
          </div>
-         <input type="submit" class="btn" value="Sign Up" name="signup">
+         <input type="submit" class="btn" value="Register" name="registerBtn">
     </form>
 
     <p class="or"> 
@@ -44,35 +44,31 @@
  <div class="icons">
      <i class="fab fa-google"></i>
      <i class="fab fa-facebook"></i>
-
  </div>
    <div class="links">
-   <p>Already Have an Account?</p>
-   <button id="signInButton">Sign In</button>
+   <p>Already have an account?</p>
+   <button id="loginButton">Login</button>
  </div>
-
 </div>
 
-
-<div class="container" id="signIn">
-    <h1 class="form-title" >Sign In</h1>
-    <form method="post" action="register.php">
-
+<div class="container" id="loginForm">
+    <h1 class="form-title">Login</h1>
+    <form method="post" action="login.php">
          <div class="input-group">
             <i class="fas fa-envelope"></i>
-            <input type="email" name="email" id="email" placeholder="Email" required>
-            <label for="email">Email</label>
+            <input type="email" name="loginEmail" id="loginEmail" placeholder="Email" required>
+            <label for="loginEmail">Email</label>
          </div>
 
          <div class="input-group">
             <i class="fas fa-lock"></i>
-            <input type="password" name="password" id="password" placeholder="Password" required>
-            <label for="password">Password</label>
+            <input type="password" name="loginPassword" id="loginPassword" placeholder="Password" required>
+            <label for="loginPassword">Password</label>
          </div>
          <p class="recover">
-            <a href="#">Recover Password</a>
+            <a href="#">Forgot Password?</a>
          </p>
-         <input type="submit" class="btn" value="Sign In" name="signin">
+         <input type="submit" class="btn" value="Login" name="loginBtn">
     </form>
 
     <p class="or"> 
@@ -82,14 +78,12 @@
  <div class="icons">
      <i class="fab fa-google"></i>
      <i class="fab fa-facebook"></i>
-
  </div>
 
  <div class="links">
-   <p>Don't Have Account yet?</p>
-   <button id="signUpButton">Sign Up</button>
+   <p>Don't have an account?</p>
+   <button id="registerButton">Register</button>
  </div>
-
 </div>
 <script src="script.js"></script>
 </body>
