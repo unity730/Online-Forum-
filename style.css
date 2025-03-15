@@ -1,139 +1,141 @@
-*{
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-   font-family: "poppins",sans-serif;
-
-}
-body{
-   background-color: #c9d6ff;
-   background: linear-gradient(to right,#e2e2e2,#c9d6ff);
-}
-.container{
-    background:#fff;
-    width: 450px;
-    padding: 1.5rem;
-    margin: 50px auto;
-    border-radius: 10px;
-    box-shadow: 0 20px 35px rgba(0,0,1,0.9);
-
-}
-form{
-    margin: 0 2rem;
-}
-.form-title{
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-align: center;
-    padding: 1.3rem;
-    margin-bottom: 0.4rem;
-}
-input{
-    color: inherit;
-    width: 100%;
-    background-color: transparent;
-    border: none;
-    border-bottom:1px solid #757575;
-    padding-left: 1.5rem;
-    font-size: 15px;
-
-}
-.input-group{
-    padding: 1% 0;
-    position: relative;
-}
-.input-group i{
-    position:absolute;
-    color: black;
-}
-input:focus{
-    background-color: transparent;
-    outline: transparent;
-    border-bottom: 2px solid hsl(327,90%,28%);
-}
-input::placeholder{
-     color: transparent;
-}
-label{
-    color: #757575;
-    position:relative;
-    left: 1.2em;
-    top: -1.3em;
-    cursor: auto;
-    transition: 0.3s ease all;
-}
-input:focus~label,input:not(:placeholder-shown)~label{
-    top:-3em ;
-    color: hsl(327,90%,28%);
-    font-size: 15px;
-}
-.recover{
-    text-align: center;
-    font-size: 1rem;
-    margin-bottom: 1rem;
-}
-.recover a{
-    text-decoration: none;
-    color: rgb(125, 125, 235);
-}
-.recover a:hover{
-    color: blue;
-    text-decoration: underline;
-}
-.btn{
-    font-size: 1.1rem;
-    padding: 8px 0;
-    border-radius: 5px;
-    outline: none;
-    border: none;
-    width: 100%;
-    background: rgb(125, 125, 235);
-    color: white;
-    cursor: pointer;
-    transition: 0.9s;
-}
-.btn:hover{
-    background: #070017;
-}
-.or{
-    font-size: 1.1rem;
-    margin-top: 0.5rem;
-    text-align: center;
-}
-.icons{
-    text-align: center;
-}
-.icons i{
-    color:rgb(125, 125, 235);
-    padding: 0.8rem 1.5rem;
-    border-radius: 10px;
-    font-size: 1.5rem;
-    cursor: pointer;
-    border: 2px solid #dfe9f5;
-    margin: 0 15px;
-    transition: 1s;
-
-}
-.icons i:hover{
-    background: #07001f;
-    font-size: 1.6rem;
-    border: 2px solid rgb(125, 125, 235);
-}
-.links{
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f4f7;
     display: flex;
-    justify-content: space-around;
-    padding:  4rem;
-    margin-top: 0.9rem;
-    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
-button{
-    color: rgb(125, 125, 235);
+
+/* Container */
+.container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Form Title */
+.form-title {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+/* Input Group */
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #999999;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px 10px 10px 35px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #007bff;
+}
+
+.input-group label {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    font-size: 0.85rem;
+    background-color: #ffffff;
+    padding: 0 5px;
+    color: #666666;
+}
+
+/* Buttons */
+.btn {
+    background-color: #007bff;
+    color: #ffffff;
     border: none;
-    background-color: transparent;
-    font-size: transparent;
-    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
 }
-button:hover{
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Or Divider */
+.or {
+    color: #999999;
+    margin: 15px 0;
+    font-size: 0.9rem;
+}
+
+/* Social Icons */
+.icons {
+    margin: 10px 0;
+}
+
+.icons i {
+    font-size: 1.5rem;
+    margin: 0 10px;
+    cursor: pointer;
+    color: #666666;
+    transition: color 0.3s ease;
+}
+
+.icons i:hover {
+    color: #007bff;
+}
+
+/* Links */
+.links p {
+    font-size: 0.9rem;
+    color: #333333;
+}
+
+.links button {
+    background: none;
+    border: none;
+    color: #007bff;
+    font-size: 0.9rem;
+    cursor: pointer;
     text-decoration: underline;
-    color: blue;
 }
+
+.links button:hover {
+    text-decoration: none;
+}
+
+/* Recover Password */
+.recover a {
+    color: #007bff;
+    font-size: 0.9rem;
+    text-decoration: underline;
+}
+
+.recover a:hover {
+    text-decoration: none;
+}
+
+ 
+ 
